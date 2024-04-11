@@ -48,11 +48,15 @@ async function excluir(id) {
   <ul>
     <li v-for="categoria in categorias" :key="categoria.id">
       <span @click="editar(categoria)">
-        ({{ categoria.id }}) - {{ categoria.descricao }} -
-      </span>
-      <button @click="excluir(categoria.id)">X</button>
+        ({{ categoria.id }}) - {{ categoria.descricao }}  
+      </span> 
+      <button class="botão" @click="excluir(categoria.id)">X</button>
     </li>
   </ul>
 </template>
 
-<style></style>
+<style>
+.botão{
+  margin-left: 10px;
+}
+</style>

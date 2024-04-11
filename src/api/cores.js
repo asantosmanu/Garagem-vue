@@ -8,7 +8,7 @@ export default class CoresApi {
     const { data } = await axios.post("/cores/", cor);
     return data.results;
   }
-  async atualizarCor(categoria) {
+  async atualizarCor(cor) {
     const { data } = await axios.put(`/cores/${cor.id}/`, cor);
     return data.results;
   }

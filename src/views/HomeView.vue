@@ -3,3 +3,6 @@
 <template>
   <h1>BemVindo</h1>
 </template>
+
+<style scoped>
+</style>

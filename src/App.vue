@@ -1,3 +1,5 @@
+
+import { RouterLink } from 'vue-router';
 import router from './router';
 <template>
   <header>
@@ -5,6 +7,7 @@ import router from './router';
     <router-link to="/categorias">Categorias</router-link> |
     <router-link to="/acessorios">Acessórios</router-link> |
     <router-link to="/cores">Cores</router-link> |
+    <router-link to="/marcas">Marcas</router-link> |
   </header>
   <main>
     <RouterView />
